@@ -10,8 +10,7 @@ const theme = extendTheme({
     heading: "KaiTi, sans-serif",
   },
   colors: {
-    primary: "#FF0000",
-    secondary: "#00FF00",
+    primary: "hotpink",
   },
   // 全局居中
   // styles: {
@@ -24,6 +23,15 @@ const theme = extendTheme({
   //     },
   //   },
   // },
+  //重新定义自己的响应式
+  breakpoints: {
+    base: "0px",
+    sm: "200px",
+    md: "768px",
+    lg: "960px",
+    xl: "1200px",
+    "2xl": "1536px",
+  },
 });
 
 export default theme;
