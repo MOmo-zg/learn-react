@@ -16,6 +16,11 @@ function HeaderView() {
         >
           <Text textAlign="center">LOGOQQ音乐</Text>
         </GridItem>
+        <GridItem 
+          colSpan={1}
+          h={giH}
+          bg={"blue.200"}
+        ></GridItem>
       </Grid>
     </Box>
   );
