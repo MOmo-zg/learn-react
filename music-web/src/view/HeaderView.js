@@ -1,5 +1,5 @@
 import { Box, Grid,Text} from "@chakra-ui/react";
-import CenterHearder, { TextComponent } from "../components/CenterHearder";
+import { TextComponent,CenterHearder} from "../components/CenterHearder";
 
 
 function HeaderView() {

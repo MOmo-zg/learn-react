@@ -14,7 +14,6 @@ const TextHearder = styled(Text)`
         color: green;
     }
 `
-
 function TextComponent({path,children}){
     return(
         <>
@@ -23,5 +22,4 @@ function TextComponent({path,children}){
     )
 }
 
-export default CenterHearder;
-export {TextComponent}
+export {TextComponent,CenterHearder}
