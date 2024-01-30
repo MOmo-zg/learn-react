@@ -1,5 +1,6 @@
 import { Box, Grid, GridItem, Text } from "@chakra-ui/react";
 // import GridItemList from "../components/GridItemList";
+import CenterHearder from "../components/CenterHearder";
 
 function HeaderView() {
   const giH = 20
@@ -21,6 +22,7 @@ function HeaderView() {
           h={giH}
           bg={"blue.200"}
         ></GridItem>
+        <CenterHearder colSpan={2}>2222</CenterHearder>
       </Grid>
     </Box>
   );

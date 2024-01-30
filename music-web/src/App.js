@@ -3,6 +3,13 @@
 import "./App.css";
 import { Container } from "@chakra-ui/react";
 import HeaderView from "./view/HeaderView";
+import { createGlobalStyle} from 'styled-components'
+
+const GlobalStyle = createGlobalStyle`
+    display:flex;
+    justify-content: center;
+    align-items: center;
+`
 
 function App() {
   // const { colorMode, toggleColorMode } = useColorMode();
@@ -32,7 +39,8 @@ function App() {
         </Square>
       </Flex> 
       </Container> */}
-
+      {/* 添加全局样式表 */}
+      <GlobalStyle></GlobalStyle>
       {/* 准备容器 */}
       <Container maxW="1000px" bg="black.500">
         <HeaderView></HeaderView>
