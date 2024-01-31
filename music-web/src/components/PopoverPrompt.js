@@ -50,9 +50,6 @@ function PopoverPrompt() {
     setValueInput(title);
   };
 
-  const changeInput = (event) => {
-    setValueInput(event.target.value);
-  };
   const handleOnblur = (event) => {
     // 使用 event.currentTarget.contains(event.relatedTarget) 来检查失去焦点的元素是否在组件内部。
     // 如果失去焦点的元素不在组件内部（即点击了组件以外的区域），则隐藏组件。
@@ -62,6 +59,7 @@ function PopoverPrompt() {
   };
 
   return (
+    // 将onBlur 添加到根节点效果 比较好
     <ContentDiv onBlur={handleOnblur}>
       <InputGroup>
         <InputRightElement>
@@ -72,13 +70,14 @@ function PopoverPrompt() {
             }}
           ></SearchIcon>
         </InputRightElement>
+        {/* 要改变value 必须添加onChange onChange会自动将value作为尝试传递给handleChange */}
         <ChangeInput
           value={valueInput}
           placeholder="搜索音乐"
           onFocus={() => {
             setIsOpen(true);
           }}
-          onChange={changeInput}
+          onChange={handleChange}
         ></ChangeInput>
       </InputGroup>
       {/* 过渡组件包装一个SimpleGrid网格 */}
@@ -98,23 +97,6 @@ function PopoverPrompt() {
                 onSetValue={handleChange}
               ></BoxContairCenter>
             ))}
-
-            {/* <BoxContairCenter
-              music={musics[1]}
-              onSetValue={handleChange}
-            ></BoxContairCenter>
-            <BoxContairCenter
-              music={musics[2]}
-              onSetValue={handleChange}
-            ></BoxContairCenter>
-            <BoxContairCenter
-              music={musics[3]}
-              onSetValue={handleChange}
-            ></BoxContairCenter>
-            <BoxContairCenter
-              music={musics[4]}
-              onSetValue={handleChange}
-            ></BoxContairCenter> */}
           </SimpleGrid>
         </Box>
       </ScaleFade>

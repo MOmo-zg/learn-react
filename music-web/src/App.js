@@ -6,9 +6,10 @@ function App() {
   return (
     <>
       {/* 准备容器 */}
-
+      
       <Container maxW="1000px" bg="black.500">
           <HeaderView></HeaderView>
+          {/* 一条线 */}
           <Divider></Divider>
       </Container>
 

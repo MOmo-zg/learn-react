@@ -1,6 +1,8 @@
 import { BoxContair, BoxCenter } from "./PopoverPrompt";
 import { Flex, Spacer } from "@chakra-ui/react";
 
+
+// 封装 为循环作准备
 function BoxContairCenter({music,onSetValue}) {
   return (
     <BoxContair as="a" href="#" onClick={(event)=>{
