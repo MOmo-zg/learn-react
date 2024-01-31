@@ -1,4 +1,4 @@
-import { Container} from "@chakra-ui/react";
+import { Container, Divider} from "@chakra-ui/react";
 import HeaderView from "./view/HeaderView";
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
 
       <Container maxW="1000px" bg="black.500">
           <HeaderView></HeaderView>
+          <Divider></Divider>
       </Container>
 
     </>

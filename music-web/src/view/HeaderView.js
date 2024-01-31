@@ -1,21 +1,23 @@
-import { Box, Grid,Text} from "@chakra-ui/react";
-import { TextComponent,CenterHearder} from "../components/CenterHearder";
-
+import { Box, Grid } from "@chakra-ui/react";
+import { TextComponent, CenterHearder } from "../components/CenterHearder";
+import PopoverPrompt from "../components/PopoverPrompt";
 
 function HeaderView() {
   // 响应式数组
-  const fontSizeList = ["10px","10px","15px"]
-  const heightList = [30,20,20]
+  const fontSizeList = ["10px", "10px", "15px"];
+  const heightList = [10, 20, 20];
 
   return (
-    <Box borderBottom="2px" borderColor="black.500">
+    <Box borderColor="black.500">
       <Grid templateColumns="repeat(13,1fr)">
         <CenterHearder
           colSpan={2}
           h={heightList}
-          fontSize={{base:fontSizeList[0], 
-            sm:fontSizeList[1], 
-            md:fontSizeList[2]}}
+          fontSize={{
+            base: fontSizeList[0],
+            sm: fontSizeList[1],
+            md: fontSizeList[2],
+          }}
         >
           <TextComponent path="#">LOGOQQ音乐</TextComponent>
         </CenterHearder>
@@ -24,81 +26,101 @@ function HeaderView() {
           bg="green"
           color="white"
           h={heightList}
-          fontSize={{base:fontSizeList[0], 
-            sm:fontSizeList[1], 
-            md:fontSizeList[2]}}
+          fontSize={{
+            base: fontSizeList[0],
+            sm: fontSizeList[1],
+            md: fontSizeList[2],
+          }}
         >
-          <Text>音乐馆</Text>
+          <TextComponent path="#" colorText="white !important">
+            音乐馆
+          </TextComponent>
         </CenterHearder>
         <CenterHearder
           colSpan={1}
           h={heightList}
-          fontSize={{base:fontSizeList[0], 
-            sm:fontSizeList[1], 
-            md:fontSizeList[2]}}
+          fontSize={{
+            base: fontSizeList[0],
+            sm: fontSizeList[1],
+            md: fontSizeList[2],
+          }}
         >
           <TextComponent path="#">我的音乐</TextComponent>
         </CenterHearder>
         <CenterHearder
           colSpan={1}
           h={heightList}
-          fontSize={{base:fontSizeList[0], 
-            sm:fontSizeList[1], 
-            md:fontSizeList[2]}}
+          fontSize={{
+            base: fontSizeList[0],
+            sm: fontSizeList[1],
+            md: fontSizeList[2],
+          }}
         >
           <TextComponent path="#">客户端</TextComponent>
         </CenterHearder>
         <CenterHearder
           colSpan={1}
           h={heightList}
-          fontSize={{base:fontSizeList[0], 
-            sm:fontSizeList[1], 
-            md:fontSizeList[2]}}
+          fontSize={{
+            base: fontSizeList[0],
+            sm: fontSizeList[1],
+            md: fontSizeList[2],
+          }}
         >
           <TextComponent path="#">开发平台</TextComponent>
         </CenterHearder>
         <CenterHearder
           colSpan={1}
           h={heightList}
-          fontSize={{base:fontSizeList[0], 
-            sm:fontSizeList[1], 
-            md:fontSizeList[2]}}
+          fontSize={{
+            base: fontSizeList[0],
+            sm: fontSizeList[1],
+            md: fontSizeList[2],
+          }}
         >
           <TextComponent path="#">VIP</TextComponent>
         </CenterHearder>
         <CenterHearder
           colSpan={2}
           h={heightList}
-          fontSize={{base:fontSizeList[0], 
-            sm:fontSizeList[1], 
-            md:fontSizeList[2]}}
+          fontSize={{
+            base: fontSizeList[0],
+            sm: fontSizeList[1],
+            md: fontSizeList[2],
+          }}
         >
-          <TextComponent path="#">搜索框</TextComponent>
+          <PopoverPrompt></PopoverPrompt>
         </CenterHearder>
         <CenterHearder
           colSpan={1}
           h={heightList}
-          fontSize={{base:fontSizeList[0], 
-            sm:fontSizeList[1], 
-            md:fontSizeList[2]}}
+          fontSize={{
+            base: fontSizeList[0],
+            sm: fontSizeList[1],
+            md: fontSizeList[2],
+          }}
         >
           <TextComponent path="#">登录</TextComponent>
         </CenterHearder>
         <CenterHearder
           colSpan={2}
           h={heightList}
-          fontSize={{base:fontSizeList[0], 
-            sm:fontSizeList[1], 
-            md:fontSizeList[2]}}
+          fontSize={{
+            base: fontSizeList[0],
+            sm: fontSizeList[1],
+            md: fontSizeList[2],
+          }}
         >
           <TextComponent path="#">开通VIP</TextComponent>
         </CenterHearder>
         <CenterHearder
           colSpan={1}
           h={heightList}
-          fontSize={{base:fontSizeList[0], 
-            sm:fontSizeList[1], 
-            md:fontSizeList[2]}}
+          fontSize={{
+            base: fontSizeList[0],
+            sm: fontSizeList[1],
+            md: fontSizeList[2],
+          }}
         >
           <TextComponent path="#">充值</TextComponent>
         </CenterHearder>
@@ -108,4 +130,3 @@ function HeaderView() {
 }
 
 export default HeaderView;
-
