@@ -9,6 +9,7 @@ import theme from './theme';
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // 需添加ChakraProvider和ColorModeProvider才能使用Chakra的效果
+  // 为全局添加样式 theme
   <React.StrictMode>
     <ChakraProvider theme={theme}>
       <ColorModeProvider>
